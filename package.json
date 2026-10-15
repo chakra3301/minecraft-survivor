@@ -1,0 +1,30 @@
+{
+  "name": "minecraft-survivor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A free, open-source, fan-made survivor game in the browser. Unofficial: not affiliated with Mojang or Microsoft.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node tools/build.mjs minecraft-survivor",
+    "start": "node tools/serve.mjs minecraft-survivor",
+    "dev": "node tools/serve.mjs minecraft-survivor --src",
+    "verify": "node tools/verify.mjs minecraft-survivor",
+    "test": "npm run build && npm run verify && playwright test",
+    "mc:vendor": "sh minecraft-survivor/tools/mc/fetch-vendor.sh",
+    "mc:assets": "node minecraft-survivor/tools/mc/import-textures.mjs && node minecraft-survivor/tools/mc/render-mobs.mjs && node minecraft-survivor/tools/mc/gen-data.mjs && node minecraft-survivor/tools/mc/make-icons.mjs",
+    "mc:music": "node minecraft-survivor/tools/mc/import-music.mjs",
+    "mc:check": "node minecraft-survivor/tools/mc/check-i18n.mjs",
+    "online:build": "node minecraft-survivor/tools/web/build-public.mjs --config minecraft-survivor/online.config.json",
+    "online:test": "minecraft-survivor/server/test-online.sh"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.61.1",
+    "pngjs": "^7.0.0",
+    "terser": "5.44.0",
+    "three": "^0.170.0"
+  }
+}

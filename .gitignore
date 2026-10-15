@@ -1,0 +1,16 @@
+node_modules/
+test-results/
+playwright-report/
+artifacts/
+.DS_Store
+*.log
+# Mojang's bedrock-samples (npm run mc:vendor)
+vendor/
+minecraft-survivor/dist/
+# Generated from vendor/ or imported from your own Minecraft install (npm run mc:assets / mc:music): Mojang's, never committed
+minecraft-survivor/assets/mobs/
+minecraft-survivor/assets/mc/
+minecraft-survivor/assets/music/
+minecraft-survivor/assets/icons/*.png
+minecraft-survivor/favicon.ico
+minecraft-survivor/deploy/coming-soon/favicon.ico

@@ -1,0 +1,12 @@
+// Cloudflare (Workers static assets, the successor of Pages) for minersurvivor.com.
+// Deploy from this folder: npx wrangler@latest deploy
+// `assets.directory` is what gets served: the public build (tools/web/build-public.mjs → ../dist-public). The old placeholder is in ./coming-soon.
+{
+  "name": "minecraft-survivor",
+  "compatibility_date": "2026-10-01",
+  "assets": { "directory": "../dist-public", "not_found_handling": "404-page" },
+  "routes": [
+    { "pattern": "minersurvivor.com", "custom_domain": true },
+    { "pattern": "www.minersurvivor.com", "custom_domain": true }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "firebase": {
+    "apiKey": "AIzaSyDMYcPyjm1MZdEBWzc6qWWLW5MIQpsyPHs",
+    "authDomain": "minecraft-survivor.firebaseapp.com",
+    "databaseURL": "https://minecraft-survivor-default-rtdb.firebaseio.com",
+    "projectId": "minecraft-survivor",
+    "storageBucket": "minecraft-survivor.firebasestorage.app",
+    "messagingSenderId": "457181918134",
+    "appId": "1:457181918134:web:35d3f898e7af8bf6014717"
+  },
+  "admins": [
+    "7QitFEv2oVhEMhhFfZbPACicn5O2"
+  ],
+  "allowGoogleSignIn": true,
+  "turnUrl": "",
+  "timeZone": "UTC"
+}

@@ -1,0 +1,5 @@
+# Online site builds (tools/web/build-public.mjs) and emulator test scratch (server/test-online.sh)
+dist-public/
+dist-emulator/
+server/.test/
+server/*.log

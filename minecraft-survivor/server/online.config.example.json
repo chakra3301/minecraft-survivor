@@ -1,0 +1,15 @@
+{
+  "firebase": {
+    "apiKey": "PASTE_FROM_FIREBASE_CONSOLE",
+    "authDomain": "YOUR_PROJECT_ID.firebaseapp.com",
+    "projectId": "YOUR_PROJECT_ID",
+    "storageBucket": "YOUR_PROJECT_ID.firebasestorage.app",
+    "messagingSenderId": "PASTE_FROM_FIREBASE_CONSOLE",
+    "appId": "PASTE_FROM_FIREBASE_CONSOLE",
+    "databaseURL": "https://YOUR_PROJECT_ID-default-rtdb.europe-west1.firebasedatabase.app"
+  },
+  "admins": [],
+  "allowGoogleSignIn": false,
+  "turnUrl": "",
+  "timeZone": "UTC"
+}

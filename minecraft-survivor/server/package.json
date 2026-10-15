@@ -1,0 +1,15 @@
+{
+  "name": "minecraft-survivor-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Firebase rules, emulators and the self-hosted Firebase web SDK for Minecraft Survivor's online site (see ../ONLINE.md).",
+  "scripts": {
+    "emulators": "firebase emulators:start --project demo-minecraft-survivor",
+    "rules": "node make-rules.mjs",
+    "deploy:rules": "node make-rules.mjs && firebase deploy --only firestore:rules,firestore:indexes,database"
+  },
+  "devDependencies": {
+    "firebase": "13.0.0",
+    "firebase-tools": "15.33.0"
+  }
+}
